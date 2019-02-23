@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Create New Todo</mat-card-title>
+    <mat-card-subtitle>Fill the inputs bellow and hit add.</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <form>
+      <mat-form-field>
+        <input matInput placeholder="Category" [(ngModel)]="todo.category" name="category" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Description" [(ngModel)]="todo.description" name="description" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Status" [(ngModel)]="todo.status" name="status" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Create Date" [(ngModel)]="todo.createDate" name="createDate" required>
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="addTodo()">Add</button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+
+  mat-card {
+    flex: 1;
+    margin: 10px;
+    height: calc(100% - 20px - 36px);
+
+    mat-card-content form {
+      display: flex;
+      flex-direction: column;
+
+      mat-form-field {
+        flex: 1;
+      }
+    }
+
+    mat-card-actions {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

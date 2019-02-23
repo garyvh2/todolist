@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@import '~@angular/material/_theming.scss';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@include mat-core();
+
+.app-theme1-theme {
+  $my-app-primary: mat-palette($mat-grey, 100);
+  $my-app-accent: mat-palette($mat-grey, 500);
+  $my-app-warn: mat-palette($mat-grey, 900);
+  $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+  @include angular-material-theme($my-app-theme);
+}
+
+.app-theme2-theme {
+  $alternate-primary: mat-palette($mat-indigo, 100);
+  $alternate-accent: mat-palette($mat-indigo, 500);
+  $alternate-warn: mat-palette($mat-indigo, 900);
+  $alternate-theme: mat-light-theme($alternate-primary, $alternate-accent, $alternate-warn);
+  @include angular-material-theme($alternate-theme);
+}
+
+
+* {
+  font-family: 'Muli', sans-serif;
+}
