@@ -1,0 +1,17 @@
+:host {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+mat-card {
+  width: 500px;
+  margin: auto;
+}
+
+[matCardImage] {
+  flex: 1;
+  height: 500px;
+  background: #ddd;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.8) 0%, rgba(100, 100, 100, 0.2));
+}

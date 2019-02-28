@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{todo.category}}</mat-card-title>
+    <mat-card-subtitle>Created on {{todo.createDate}}</mat-card-subtitle>
+  </mat-card-header>
+  <img matCardImage src="https://picsum.photos/500/500?random&image={{todo.id}}">
+  <mat-card-content>
+    {{todo.description}}
+  </mat-card-content>
+</mat-card>

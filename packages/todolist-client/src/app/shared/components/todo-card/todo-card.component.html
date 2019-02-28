@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card [routerLink]="['/detail/', todo.id]">
   <mat-card-header>
     <mat-card-title>{{todo.category}}</mat-card-title>
     <mat-card-subtitle>Created on {{todo.createDate}}</mat-card-subtitle>

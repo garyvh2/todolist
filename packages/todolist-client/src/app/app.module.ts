@@ -15,13 +15,16 @@ import {
 } from "@angular/material";
 import { TodoListComponent } from "./shared/components/todo-list/todo-list.component";
 import { TodoAddComponent } from "./shared/components/todo-add/todo-add.component";
+import { AppRoutingModule } from './app-routing.module';
+import { DetailComponent } from './views/detail/detail.component';
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     TodoCardComponent,
     TodoListComponent,
-    TodoAddComponent
+    TodoAddComponent,
+    DetailComponent
   ],
   imports: [
     HttpClientModule,
@@ -30,7 +33,8 @@ import { TodoAddComponent } from "./shared/components/todo-add/todo-add.componen
     BrowserAnimationsModule,
     MatCardModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    AppRoutingModule
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]
